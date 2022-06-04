@@ -19,7 +19,7 @@
 	export let movieDetail;
 </script>
 
-<div class="movie-details" in:fly={{ y: 50, duration: 500 }} out:fly={{ duration: 500 }}>
+<div class="movie-details" in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
 	<div class="img-container">
 		<img
 			src={'https://image.tmdb.org/t/p/original' + movieDetail.backdrop_path}
