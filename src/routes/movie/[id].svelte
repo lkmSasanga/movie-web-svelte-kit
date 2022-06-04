@@ -1,7 +1,7 @@
 <script context="module">
 	export async function load({ fetch, params }) {
 		const res = await fetch(
-			`https://api.themoviedb.org/3/movie/${params.id}?api_key=0c19aa790ef3cb44ca6a74ec51a4e97c&language=en-US&page=1`
+			`https://api.themoviedb.org/3/movie/${params.id}?api_key=${import.meta.env.VITE_API}&language=en-US&page=1`
 		);
 
 		const movieDetail = await res.json();
@@ -19,7 +19,7 @@
 	export let movieDetail;
 </script>
 
-<div class="movie-details" in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
+<div class="movie-details" in:fly={{ y: 50, duration: 500, delay: 700 }} out:fly={{ duration: 500 }}>
 	<div class="img-container">
 		<img
 			src={'https://image.tmdb.org/t/p/original' + movieDetail.backdrop_path}
