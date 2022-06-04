@@ -34,7 +34,7 @@
 			{movieDetail.release_date} <br />
 			<span>Budget:</span> ${movieDetail.budget} <br />
 			<span>Rating:</span>
-			${movieDetail.vote_average} <br />
+			{movieDetail.vote_average} <br />
 			<span>Runtime:</span>
 			{movieDetail.runtime}mins
 		</p>
