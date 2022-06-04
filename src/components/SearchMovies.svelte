@@ -73,7 +73,7 @@
 		font-weight: bold;
 		background: rgb(63, 63, 63);
 		border-radius: 10px;
-		padding: 1rem;
+		padding: 0.6rem;
 	}
 	label {
 		position: absolute;
